@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="segmentFrom col-sm-5">
+        <div class="segmentInternal">
+            <select ng-options="country.name for country in countries" ng-model="selectedCountryFrom" ng-change="countryFromSelected()">
+                <option value="">From country</option>
+            </select><br/>
+            <div class="error" ng-if="fromCurMissingError">Please choose country <strong>from</strong> which to transfer</div>
+            <input type="number" ng-model="fromVal" ng-change="convert(selectedCountryFrom.currencyId, selectedCountryTo.currencyId, 'ltr')"></input><span>{{selectedCountryFrom.currencyId}}</span>
+        </div>
+    </div>
+    <div class="segmentArrow col-sm-2">
+        <div class="segmentInternal">
+            <svg xmlns="http://www.w3.org/2000/svg">
+                <g>
+                    <title>Convert</title>
+                    <path fill="#fff" stroke="#000" stroke-width="1.5" d="m0.005,14.91164l14.43143,-14.88893l0,7.44444l20.91492,0l0,-7.44444l14.43142,14.88893l-14.43142,14.88885l0,-7.44442l-20.91492,0l0,7.44442l-14.43143,-14.88885z" id="svg_2"/>
+                </g>
+            </svg>
+        </div>
+    </div>
+    <div class="segmentTo col-sm-5">
+        <div class="segmentInternal">
+            <select ng-options="country.name for country in countries" ng-model="selectedCountryTo" ng-change="countryToSelected()">
+                <option value="">To country</option>
+            </select><br/>
+            <div class="error" ng-if="toCurMissingError">Please choose country <strong>to</strong> which to transfer</div>
+            <input type="number" ng-model="toVal" ng-change="convert(selectedCountryTo.currencyId, selectedCountryFrom.currencyId, 'rtl')"></input><span>{{selectedCountryTo.currencyId}}</span>
+        </div>
+    </div>
+</div>

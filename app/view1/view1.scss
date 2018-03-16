@@ -1,0 +1,63 @@
+.segmentFrom, .segmentTo {
+
+  .segmentInternal {
+    width: 258px;
+    margin: auto;
+  }
+
+  select, input {
+    margin: 6px;
+  }
+}
+
+.segmentArrow {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+
+  .segmentInternal {
+    width: 50px;
+    margin: auto;
+
+    svg {
+      width: 50px;
+    }
+  }
+}
+
+@media (min-width: 540px) {
+  .segmentArrow .segmentInternal {
+    transform: rotate(90deg);
+    height: 50px;
+
+    svg {
+      height: 50px;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .segmentArrow .segmentInternal {
+    transform: rotate(0deg);
+    height: 30px;
+
+    svg {
+      height: 30px;
+    }
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}

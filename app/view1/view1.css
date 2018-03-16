@@ -1,0 +1,33 @@
+.segmentFrom .segmentInternal, .segmentTo .segmentInternal {
+  width: 258px;
+  margin: auto; }
+.segmentFrom select, .segmentFrom input, .segmentTo select, .segmentTo input {
+  margin: 6px; }
+
+.segmentArrow {
+  display: flex;
+  align-items: center;
+  vertical-align: middle; }
+  .segmentArrow .segmentInternal {
+    width: 50px;
+    margin: auto; }
+    .segmentArrow .segmentInternal svg {
+      width: 50px; }
+
+@media (min-width: 540px) {
+  .segmentArrow .segmentInternal {
+    transform: rotate(90deg);
+    height: 50px; }
+    .segmentArrow .segmentInternal svg {
+      height: 50px; } }
+@media (min-width: 576px) {
+  .segmentArrow .segmentInternal {
+    transform: rotate(0deg);
+    height: 30px; }
+    .segmentArrow .segmentInternal svg {
+      height: 30px; } }
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
+
+/*# sourceMappingURL=view1.css.map */

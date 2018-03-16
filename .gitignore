@@ -1,2 +1,16 @@
 .DS_Store
 .idea
+node_modules/
+bower_components/
+tmp
+index-async.html
+view1_test.js
+.bowerrc
+.jshintrc
+LICENSE
+package.json
+package-lock.json
+README.md
+karma.conf.js
+bower.json
+.travis.yml
